@@ -4,35 +4,41 @@ using UnityEngine;
 
 public class PlayerAttackEffects : MonoBehaviour
 {
+    public GameObject groundImpact_Spawn, punchFX_Spawn, fireTornado_Spawn, fireShield_Spawn;
+    public GameObject groundImpact_Prefab, punchFX_Prefab, fireTornado_Prefab, fireShield_Prefab,
+        healFX_Prefab, thunderFX_Prefab;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
     void Spell1()
     {
-        print("We hit Spell 1");
+        Instantiate(fireTornado_Prefab, fireTornado_Spawn.transform.position, Quaternion.identity);
     }
 
     void Spell2()
     {
-        print("We hit Spell 2");
-    }
-    void StaffAttack()
+        Instantiate(thunderFX_Prefab, punchFX_Spawn.transform.position, Quaternion.identity);
+	}
+	void StaffAttack()
     {
-        print("We hit Spell 3 staff attack");
+        GameObject fireObj = Instantiate(fireShield_Prefab, fireShield_Spawn.transform.position,
+                                 Quaternion.identity);
+        fireObj.transform.SetParent(transform);
     }
     void Punch()
     {
-        print("We hit Spell 4 punch");
+        Instantiate(punchFX_Prefab, punchFX_Spawn.transform.position, Quaternion.identity);
     }
     void Heal()
     {
-        print("We hit Spell 5 heal");
+        Vector3 temp = transform.position;
+        temp.y += 2f;
+        GameObject healObj = Instantiate(healFX_Prefab, temp, Quaternion.identity) as GameObject;
+        healObj.transform.SetParent(transform);
     }
     void GroundImpact()
     {
-        print("We hit Spell 6");
+        Instantiate(groundImpact_Prefab, groundImpact_Spawn.transform.position, Quaternion.identity);
     }
 
 
