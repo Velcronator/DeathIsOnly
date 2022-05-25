@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 155823305}
   m_Layer: 0
-  m_Name: PunchFX
+  m_Name: Spell2
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155823304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 1}
+  m_LocalPosition: {x: 0, y: 1.51, z: 3.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8722700893379187253}
@@ -4844,9 +4844,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1047564920}
   m_Layer: 0
-  m_Name: GroundImpact
+  m_Name: Spell1
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4858,7 +4858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047564919}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 2.6}
+  m_LocalPosition: {x: 0, y: 1.4, z: 2.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8722700893379187253}
@@ -4874,9 +4874,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1458129993}
   m_Layer: 0
-  m_Name: FireTornado
+  m_Name: StaffAttack
   m_TagString: Untagged
-  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4888,7 +4888,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458129992}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 1}
+  m_LocalPosition: {x: 0, y: 0.71, z: 5.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8722700893379187253}
@@ -4904,9 +4904,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1748872212}
   m_Layer: 0
-  m_Name: FireShield
+  m_Name: Punch
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4918,7 +4918,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1748872211}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.32, z: 1.74}
+  m_LocalPosition: {x: 0, y: 1.56, z: 1.74}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8722700893379187253}
@@ -6378,6 +6378,36 @@ Transform:
   m_Father: {fileID: 8029902310209956349}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -63.14243, y: 154.85551, z: 97.88889}
+--- !u!1 &6473733033218239547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8728470429529272187}
+  m_Layer: 0
+  m_Name: ThunderSpirits
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8728470429529272187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6473733033218239547}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.84, z: -0.09}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8722700893379187253}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6697884139617734448
 GameObject:
   m_ObjectHideFlags: 0
@@ -6521,6 +6551,36 @@ Transform:
   m_Father: {fileID: 900730643329817286}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -16.764938, y: -0.0000050836516, z: -0.000002167912}
+--- !u!1 &7804143671042295813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6294690195635924613}
+  m_Layer: 0
+  m_Name: Heal
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6294690195635924613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7804143671042295813}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8722700893379187253}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7971211554334122493
 GameObject:
   m_ObjectHideFlags: 0
@@ -6591,6 +6651,8 @@ Transform:
   - {fileID: 155823305}
   - {fileID: 1458129993}
   - {fileID: 1748872212}
+  - {fileID: 6294690195635924613}
+  - {fileID: 8728470429529272187}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6673,14 +6735,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d547b7e06f115a44b8d209cb2473ec87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundImpact_Spawn: {fileID: 1047564919}
-  punchFX_Spawn: {fileID: 155823304}
-  fireTornado_Spawn: {fileID: 1458129992}
-  fireShield_Spawn: {fileID: 1748872211}
-  groundImpact_Prefab: {fileID: 100008, guid: c93eb2a065a5d6a43891e6777c87efd7, type: 3}
-  punchFX_Prefab: {fileID: 1628744458893394, guid: 30e62038b195a1e4d9bb7e3ce5c0e9f3, type: 3}
-  fireTornado_Prefab: {fileID: 100000, guid: 3e9d08321848b4d40b5bc5580c5fa1bb, type: 3}
-  fireShield_Prefab: {fileID: 1727626132299242, guid: c3c6fc396a52ad94d9600fe8fc218204, type: 3}
+  spell1_Spawn: {fileID: 1047564919}
+  spell2_Spawn: {fileID: 155823304}
+  staffAttack_Spawn: {fileID: 1458129992}
+  punch_Spawn: {fileID: 1748872211}
+  healFX_Spawn: {fileID: 7804143671042295813}
+  thunderFX_Spawn: {fileID: 6473733033218239547}
+  spell1_Prefab: {fileID: 100008, guid: c93eb2a065a5d6a43891e6777c87efd7, type: 3}
+  spell2_Prefab: {fileID: 100000, guid: 5efcf6e88b989e24bbb6806dca1504c3, type: 3}
+  staffAttack_Prefab: {fileID: 1134129239631916, guid: 0f29433a45fbea34c8dcbad57eaf890e, type: 3}
+  punch_Prefab: {fileID: 100000, guid: 88c9aed1b06878a4f800fabfef6fc1fa, type: 3}
   healFX_Prefab: {fileID: 100000, guid: 7ceab09baf7734645be3bd3989027cfd, type: 3}
   thunderFX_Prefab: {fileID: 1781930563638536, guid: 27642c7b4d6a0bf44a5cde073eeff51b, type: 3}
 --- !u!1 &8351017769047109148

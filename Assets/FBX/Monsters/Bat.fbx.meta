@@ -1,62 +1,29 @@
 fileFormatVersion: 2
-guid: 13ac5cb3d82a768438110be5d870d510
+guid: c0b7ebbf29318574b9119685069ae069
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -4746579845412563721
-    second: RobotArmature|Dance
+      74: 278171248096860724
+    second: Bite_Front
   - first:
-      74: -4746380211842627776
-    second: RobotArmature|Death
+      74: 4348485665485846014
+    second: Death
   - first:
-      74: -8283141236615596318
-    second: RobotArmature|Hello
+      74: -8669566013696534383
+    second: HitRecieve
   - first:
-      74: 2023540188812327069
-    second: RobotArmature|HitRecieve_1
+      74: -4526551656673740845
+    second: Flying
   - first:
-      74: -3668775287481133465
-    second: RobotArmature|HitRecieve_2
+      74: -3857714879267639888
+    second: MonsterArmature|Bite_Front
   - first:
-      74: -2490753452179567278
-    second: RobotArmature|Idle
+      74: -7296260868257156209
+    second: MonsterArmature|Death
   - first:
-      74: 8016117995556713153
-    second: RobotArmature|Jump
-  - first:
-      74: 1324644549613963605
-    second: RobotArmature|Kick
-  - first:
-      74: 4203162683634984400
-    second: RobotArmature|No
-  - first:
-      74: -2425987201921629015
-    second: RobotArmature|Pickup
-  - first:
-      74: -6810371955151399809
-    second: RobotArmature|Punch
-  - first:
-      74: 1988974090631396434
-    second: RobotArmature|Run
-  - first:
-      74: 1500349597681915463
-    second: RobotArmature|Run_Holding
-  - first:
-      74: -2826706811717745697
-    second: RobotArmature|Shoot
-  - first:
-      74: 7227484905004306851
-    second: RobotArmature|SwordSlash
-  - first:
-      74: 3124539885581274750
-    second: RobotArmature|Walk
-  - first:
-      74: 2974835886356173238
-    second: RobotArmature|Walk_Holding
-  - first:
-      74: 3085827095450492783
-    second: RobotArmature|Yes
+      74: -4747425994294975396
+    second: MonsterArmature|Flying
   externalObjects: {}
   materials:
     materialImportMode: 2

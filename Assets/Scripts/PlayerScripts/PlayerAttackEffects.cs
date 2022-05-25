@@ -4,41 +4,36 @@ using UnityEngine;
 
 public class PlayerAttackEffects : MonoBehaviour
 {
-    public GameObject groundImpact_Spawn, punchFX_Spawn, fireTornado_Spawn, fireShield_Spawn;
-    public GameObject groundImpact_Prefab, punchFX_Prefab, fireTornado_Prefab, fireShield_Prefab,
+    public GameObject spell1_Spawn, spell2_Spawn, staffAttack_Spawn, punch_Spawn, healFX_Spawn, thunderFX_Spawn;
+    public GameObject spell1_Prefab, spell2_Prefab, staffAttack_Prefab, punch_Prefab,
         healFX_Prefab, thunderFX_Prefab;
 
     // Start is called before the first frame update
 
     void Spell1()
     {
-        Instantiate(fireTornado_Prefab, fireTornado_Spawn.transform.position, Quaternion.identity);
+        Instantiate(spell1_Prefab, spell1_Spawn.transform.position, Quaternion.identity);
     }
 
     void Spell2()
     {
-        Instantiate(thunderFX_Prefab, punchFX_Spawn.transform.position, Quaternion.identity);
+        Instantiate(spell2_Prefab, spell2_Spawn.transform.position, Quaternion.identity);
 	}
 	void StaffAttack()
     {
-        GameObject fireObj = Instantiate(fireShield_Prefab, fireShield_Spawn.transform.position,
-                                 Quaternion.identity);
-        fireObj.transform.SetParent(transform);
+        Instantiate(staffAttack_Prefab, staffAttack_Spawn.transform.position, Quaternion.identity);
     }
     void Punch()
     {
-        Instantiate(punchFX_Prefab, punchFX_Spawn.transform.position, Quaternion.identity);
+        Instantiate(punch_Prefab, punch_Spawn.transform.position, Quaternion.identity);
     }
     void Heal()
     {
-        Vector3 temp = transform.position;
-        temp.y += 2f;
-        GameObject healObj = Instantiate(healFX_Prefab, temp, Quaternion.identity) as GameObject;
-        healObj.transform.SetParent(transform);
+        Instantiate(healFX_Prefab, healFX_Spawn.transform.position, Quaternion.identity);
     }
     void GroundImpact()
     {
-        Instantiate(groundImpact_Prefab, groundImpact_Spawn.transform.position, Quaternion.identity);
+        Instantiate(thunderFX_Prefab, thunderFX_Spawn.transform.position, Quaternion.identity);
     }
 
 
