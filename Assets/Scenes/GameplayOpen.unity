@@ -540,6 +540,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4635898796858447754, guid: eaf523966b0b38b4e866ab92bcde648c, type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 4067791cd40ebc446ac87775441b4ee9, type: 3}
     - target: {fileID: 6473733033218239547, guid: eaf523966b0b38b4e866ab92bcde648c, type: 3}
       propertyPath: m_Icon
       value: 
