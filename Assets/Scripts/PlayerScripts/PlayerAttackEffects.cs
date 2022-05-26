@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerAttackEffects : MonoBehaviour
 {
-    public GameObject spell1_Spawn, spell2_Spawn, staffAttack_Spawn, punch_Spawn, healFX_Spawn, thunderFX_Spawn;
-    public GameObject spell1_Prefab, spell2_Prefab, staffAttack_Prefab, punch_Prefab,
+    public GameObject spell1_Spawn, spell2_Spawn, staffAttack_Spawn, shield_Spawn, healFX_Spawn, thunderFX_Spawn;
+    public GameObject spell1_Prefab, spell2_Prefab, staffAttack_Prefab, shield_Prefab,
         healFX_Prefab, thunderFX_Prefab;
 
     // Start is called before the first frame update
@@ -24,8 +24,8 @@ public class PlayerAttackEffects : MonoBehaviour
         Instantiate(staffAttack_Prefab, staffAttack_Spawn.transform.position, Quaternion.identity);
     }
     void Punch()
-    {   // really heal TODO change event
-        Instantiate(punch_Prefab, punch_Spawn.transform.position, Quaternion.identity);
+    {   //punch is shield
+        Instantiate(shield_Prefab, shield_Spawn.transform.position, Quaternion.identity);
     }
     void Heal()
     {

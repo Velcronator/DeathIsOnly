@@ -224,7 +224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 381341669}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.5, y: 1, z: 12.7}
+  m_LocalPosition: {x: -9.9, y: 1, z: 12.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 912686883}
@@ -699,18 +699,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 938978426, guid: eaf523966b0b38b4e866ab92bcde648c, type: 3}
-      propertyPath: punch_Prefab
-      value: 
-      objectReference: {fileID: 1545806602296978, guid: 7e6c6922da022a04ca4bbcebdde22c30, type: 3}
-    - target: {fileID: 1748872211, guid: eaf523966b0b38b4e866ab92bcde648c, type: 3}
-      propertyPath: m_Name
-      value: Heal
-      objectReference: {fileID: 0}
-    - target: {fileID: 1748872212, guid: eaf523966b0b38b4e866ab92bcde648c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8234430133002897551, guid: eaf523966b0b38b4e866ab92bcde648c, type: 3}
       propertyPath: m_Name
       value: Cleric
