@@ -14,12 +14,15 @@ public enum EnemyState
 
 public class EnemyControl : MonoBehaviour
 {
+	private float npcRoamAmount = 10f;
 
 	private float attack_Distance = 1.5f;
 	private float alert_Attack_Distance = 8f;
 	private float followDistance = 15f;
 
 	private float enemyToPlayerDistance;
+
+	private float howMuchOfAnimationDone = 0.95f;
 
 	[HideInInspector]
 	public EnemyState enemy_CurrentState = EnemyState.IDLE;
@@ -101,7 +104,7 @@ public class EnemyControl : MonoBehaviour
 			navAgent.enabled = false;
 
 			if (!anim.IsInTransition(0) && anim.GetCurrentAnimatorStateInfo(0).IsName("Death")
-				&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
+				&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= howMuchOfAnimationDone)
 			{
 				// wait for anim to finish then destroy object
 				Destroy(gameObject, 2f);
@@ -230,8 +233,8 @@ public class EnemyControl : MonoBehaviour
 
 			if (Vector3.Distance(transform.position, whereTo_Navigate) <= 2f)
 			{	
-				whereTo_Navigate.x = Random.Range(initialPosition.x - 5f, initialPosition.x + 5f);
-				whereTo_Navigate.z = Random.Range(initialPosition.z - 5f, initialPosition.z + 5f);
+				whereTo_Navigate.x = Random.Range(initialPosition.x - npcRoamAmount, initialPosition.x + npcRoamAmount);
+				whereTo_Navigate.z = Random.Range(initialPosition.z - npcRoamAmount, initialPosition.z + npcRoamAmount);
 			}
 			else
 			{

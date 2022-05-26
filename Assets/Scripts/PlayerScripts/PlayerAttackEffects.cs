@@ -24,7 +24,7 @@ public class PlayerAttackEffects : MonoBehaviour
         Instantiate(staffAttack_Prefab, staffAttack_Spawn.transform.position, Quaternion.identity);
     }
     void Punch()
-    {
+    {   // really heal TODO change event
         Instantiate(punch_Prefab, punch_Spawn.transform.position, Quaternion.identity);
     }
     void Heal()

@@ -5,16 +5,16 @@ using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
-
+	// stuff to assign
 	public float health = 100f;
-
 	public Image health_Img;
 
+	// damage
 	public void TakeDamage(float amount)
 	{
 		health -= amount;
-
-		health_Img.fillAmount = health / 100f;
+		print("health is: " + health);
+		//health_Img.fillAmount = health / 100f;
 
 		if (health <= 0)
 		{
