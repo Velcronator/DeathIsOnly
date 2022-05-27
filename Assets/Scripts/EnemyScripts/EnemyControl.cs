@@ -96,7 +96,6 @@ public class EnemyControl : MonoBehaviour
 		}
 		else
 		{// death is only the beginning
-			print("death");//todo
 			anim.SetBool("Death", true);
 			charController.enabled = false;
 			navAgent.enabled = false;

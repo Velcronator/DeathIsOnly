@@ -17,8 +17,7 @@ public class PlayerHealth : MonoBehaviour
 	void Awake()
 	{
 		animator = GetComponent<Animator>();
-
-		//health_Img = GameObject.Find("Health Icon").GetComponent<Image>();
+		health_Img = GameObject.Find("HealthIcon").GetComponent<Image>();
 	}
 
 	public bool Shielded
@@ -34,7 +33,7 @@ public class PlayerHealth : MonoBehaviour
 
 			health -= amount;
 			// for image TODO
-			//health_Img.fillAmount = health / 100f;
+			health_Img.fillAmount = health / 100f;
 			print("player health is " + health);
 
 			if (health <= 0f)
@@ -57,9 +56,7 @@ public class PlayerHealth : MonoBehaviour
 	{
 		health += healAmount;
 
-		if (health > 100f)
-			health = 100f;
-
+		if (health > 100f) { health = 100f; }
 		health_Img.fillAmount = health / 100f;
 	}
 

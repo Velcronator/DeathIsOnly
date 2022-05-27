@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 72438308, guid: 9a232b41264f17f4b9682abd7e15b327, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 963194227}
     - target: {fileID: 1426557236, guid: 9a232b41264f17f4b9682abd7e15b327, type: 3}
       propertyPath: walkPoints.Array.data[0]
       value: 

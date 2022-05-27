@@ -57,7 +57,7 @@ public class PlayerAttack : MonoBehaviour
 		}
 
 		// Check for keys down to activate animations
-		if (Input.GetKeyDown(KeyCode.Alpha1))
+		if (Input.GetKeyDown(KeyCode.A))
 		{
 			playerMove.TargetPosition = transform.position;
 
@@ -68,7 +68,7 @@ public class PlayerAttack : MonoBehaviour
 				animator.SetInteger("Attack", 1);
 			}
 		}
-		else if (Input.GetKeyDown(KeyCode.Alpha2))
+		else if (Input.GetKeyDown(KeyCode.S))
 		{
 			playerMove.TargetPosition = transform.position;
 
@@ -78,7 +78,7 @@ public class PlayerAttack : MonoBehaviour
 				animator.SetInteger("Attack", 2);
 			}
 		}
-		else if (Input.GetKeyDown(KeyCode.Alpha3))
+		else if (Input.GetKeyDown(KeyCode.D))
 		{
 			playerMove.TargetPosition = transform.position;
 
@@ -88,7 +88,7 @@ public class PlayerAttack : MonoBehaviour
 				animator.SetInteger("Attack", 3);
 			}
 		}
-		else if (Input.GetKeyDown(KeyCode.Alpha4))
+		else if (Input.GetKeyDown(KeyCode.Q))
 		{
 			playerMove.TargetPosition = transform.position;
 
@@ -98,7 +98,7 @@ public class PlayerAttack : MonoBehaviour
 				animator.SetInteger("Attack", 4);
 			}
 		}
-		else if (Input.GetKeyDown(KeyCode.Alpha5))
+		else if (Input.GetKeyDown(KeyCode.W))
 		{
 			playerMove.TargetPosition = transform.position;
 
@@ -123,7 +123,7 @@ public class PlayerAttack : MonoBehaviour
 			animator.SetInteger("Attack", 0);
 		}
 
-		if (Input.GetKey(KeyCode.Space))
+		if (Input.GetKey(KeyCode.E))
 		{	// Stop look hey what's that sound everybody look around
 			Vector3 targetPos = Vector3.zero;
 
