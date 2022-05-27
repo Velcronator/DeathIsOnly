@@ -13,7 +13,6 @@ public class EnemyHealth : MonoBehaviour
 	public void TakeDamage(float amount)
 	{
 		health -= amount;
-		print("health is: " + health);
 		//health_Img.fillAmount = health / 100f;
 
 		if (health <= 0)

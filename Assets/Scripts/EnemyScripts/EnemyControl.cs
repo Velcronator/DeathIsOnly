@@ -22,8 +22,6 @@ public class EnemyControl : MonoBehaviour
 
 	private float enemyToPlayerDistance;
 
-	private float howMuchOfAnimationDone = 0.95f;
-
 	[HideInInspector]
 	public EnemyState enemy_CurrentState = EnemyState.IDLE;
 	private EnemyState enemy_LastState = EnemyState.IDLE;
@@ -66,7 +64,6 @@ public class EnemyControl : MonoBehaviour
 
 	void Update()
 	{
-
 		// IF HEALTH IS <= 0 WE WILL SET THE STATE TO DEATH
 		if (enemyHealth.health <= 0f)
 		{
@@ -99,16 +96,11 @@ public class EnemyControl : MonoBehaviour
 		}
 		else
 		{// death is only the beginning
+			print("death");//todo
 			anim.SetBool("Death", true);
 			charController.enabled = false;
 			navAgent.enabled = false;
-
-			if (!anim.IsInTransition(0) && anim.GetCurrentAnimatorStateInfo(0).IsName("Death")
-				&& anim.GetCurrentAnimatorStateInfo(0).normalizedTime >= howMuchOfAnimationDone)
-			{
-				// wait for anim to finish then destroy object
-				Destroy(gameObject, 2f);
-			}
+			Destroy(gameObject, 2f);
 		}
 	}
 
