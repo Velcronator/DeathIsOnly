@@ -90,9 +90,13 @@ public class PlayerMove : MonoBehaviour
 		{   // are we there yet
 			animator.SetFloat("Run", 1.0f);// speed to set the run animation on.
 			Vector3 targetTemp = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
-			transform.rotation = Quaternion.Slerp(transform.rotation,
-				Quaternion.LookRotation(targetTemp - transform.position),
-				playerRotationSpeed * Time.deltaTime); // Rotate the player to the position
+
+			if(targetTemp != Vector3.zero)
+            {
+				transform.rotation = Quaternion.Slerp(transform.rotation,
+					Quaternion.LookRotation(targetTemp - transform.position),
+					playerRotationSpeed * Time.deltaTime); // Rotate the player to the position
+			}
 			playerMove = transform.forward * moveSpeed * Time.deltaTime;
 			if (Vector3.Distance(transform.position, targetPosition) <= 0.1f)// look kids we have arrived
 			{

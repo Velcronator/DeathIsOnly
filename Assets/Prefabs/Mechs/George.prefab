@@ -575,7 +575,6 @@ GameObject:
   - component: {fileID: 2135844085722498876}
   - component: {fileID: 1426557233}
   - component: {fileID: 1426557235}
-  - component: {fileID: 1426557236}
   - component: {fileID: 4635106040173399472}
   m_Layer: 6
   m_Name: George
@@ -611,7 +610,7 @@ Animator:
   m_GameObject: {fileID: 2652034288534965979}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 38ea7a02d5d08e14984c7a578fd962ce, type: 3}
-  m_Controller: {fileID: 9100000, guid: 02b76482cd261424eb1c87eec4d68f06, type: 2}
+  m_Controller: {fileID: 9100000, guid: ab90cd433e3974d448a6f59df850e377, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -672,6 +671,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe81ddfc011d0da42b8019e3aa47e057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npcRoamAmount: 10
+  attack_Distance: 1.5
+  alert_Attack_Distance: 8
+  followDistance: 15
   enemy_CurrentState: 0
 --- !u!114 &1426557235
 MonoBehaviour:
@@ -685,26 +688,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce72145065b85c44687470ea7f685d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  health_Img: {fileID: 0}
---- !u!114 &1426557236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2652034288534965979}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad724d190aa850a4484d4f2cb20b2708, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  health: 30
+  health_Img: {fileID: 108535968}
 --- !u!114 &4635106040173399472
 MonoBehaviour:
   m_ObjectHideFlags: 0

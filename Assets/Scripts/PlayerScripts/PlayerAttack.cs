@@ -66,6 +66,7 @@ public class PlayerAttack : MonoBehaviour
 			{
 				fadeImages[0] = 1;
 				animator.SetInteger("Attack", 1);
+				RemoveCursorPoint();
 			}
 		}
 		else if (Input.GetKeyDown(KeyCode.S))
@@ -76,6 +77,8 @@ public class PlayerAttack : MonoBehaviour
 			{
 				fadeImages[1] = 1;
 				animator.SetInteger("Attack", 2);
+				RemoveCursorPoint();
+
 			}
 		}
 		else if (Input.GetKeyDown(KeyCode.D))
@@ -86,6 +89,8 @@ public class PlayerAttack : MonoBehaviour
 			{
 				fadeImages[2] = 1;
 				animator.SetInteger("Attack", 3);
+				RemoveCursorPoint();
+
 			}
 		}
 		else if (Input.GetKeyDown(KeyCode.Q))
@@ -96,6 +101,8 @@ public class PlayerAttack : MonoBehaviour
 			{
 				fadeImages[3] = 1;
 				animator.SetInteger("Attack", 4);
+				RemoveCursorPoint();
+
 			}
 		}
 		else if (Input.GetKeyDown(KeyCode.W))
@@ -106,6 +113,8 @@ public class PlayerAttack : MonoBehaviour
 			{
 				fadeImages[4] = 1;
 				animator.SetInteger("Attack", 5);
+				RemoveCursorPoint();
+
 			}
 		}
 		else if (Input.GetMouseButtonDown(1))
@@ -116,6 +125,8 @@ public class PlayerAttack : MonoBehaviour
 			{
 				fadeImages[5] = 1;
 				animator.SetInteger("Attack", 6);
+				RemoveCursorPoint();
+
 			}
 		}
 		else
@@ -217,5 +228,14 @@ public class PlayerAttack : MonoBehaviour
 
 		return faded;
 	}
+
+	void RemoveCursorPoint()
+    {
+		GameObject cursorObject = GameObject.FindGameObjectWithTag("Cursor");
+		if (cursorObject)
+		{
+			Destroy(cursorObject);
+		}
+    }
 
 } // class

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FxTemporaire
   - Enemy
+  - Boss
+  - Cursor
   layers:
   - Default
   - TransparentFX

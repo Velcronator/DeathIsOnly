@@ -14,11 +14,10 @@ public enum EnemyState
 
 public class EnemyControl : MonoBehaviour
 {
-	private float npcRoamAmount = 10f;
-
-	private float attack_Distance = 1.5f;
-	private float alert_Attack_Distance = 8f;
-	private float followDistance = 15f;
+	public float npcRoamAmount = 10f;
+	public float attack_Distance = 1.5f;
+	public float alert_Attack_Distance = 8f;
+	public float followDistance = 15f;
 
 	private float enemyToPlayerDistance;
 
@@ -123,7 +122,7 @@ public class EnemyControl : MonoBehaviour
 
 		}
 		else if (enemyToPlayerDis >= alert_Attack_Distance &&
-				 lastState == EnemyState.PAUSE || lastState == EnemyState.ATTACK)
+				 (lastState == EnemyState.PAUSE || lastState == EnemyState.ATTACK))
 		{
 			lastState = curState;
 			curState = EnemyState.PAUSE;
@@ -241,7 +240,7 @@ public class EnemyControl : MonoBehaviour
 			navAgent.isStopped = true;
 		}
 
-		//		charController.Move (whereTo_Move);
+		//charController.Move (whereTo_Move);
 
 	}
 
