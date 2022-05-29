@@ -6,8 +6,12 @@ TagManager:
   tags:
   - FxTemporaire
   - Enemy
-  - Boss
   - Cursor
+  - EnemySpawn
+  - BlueBoss
+  - YellowBoss
+  - RedBoss
+  - PurpleBoss
   layers:
   - Default
   - TransparentFX

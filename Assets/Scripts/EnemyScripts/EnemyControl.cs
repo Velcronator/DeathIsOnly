@@ -19,7 +19,7 @@ public class EnemyControl : MonoBehaviour
 	public float alert_Attack_Distance = 8f;
 	public float followDistance = 15f;
 
-	private float enemyToPlayerDistance;
+	private float enemyToPlayerDistance = 0;
 
 	[HideInInspector]
 	public EnemyState enemy_CurrentState = EnemyState.IDLE;
@@ -28,8 +28,8 @@ public class EnemyControl : MonoBehaviour
 	private Transform playerTarget;
 	private Vector3 initialPosition;
 
-	private float move_Speed = 2f;
-	private float walk_Speed = 1f;
+	//private float move_Speed = 2f;
+	//private float walk_Speed = 1f;
 
 	private CharacterController charController;
 	private Vector3 whereTo_Move = Vector3.zero;
@@ -107,7 +107,9 @@ public class EnemyControl : MonoBehaviour
 		// set stuff
 		enemyToPlayerDis = Vector3.Distance(transform.position, playerTarget.position);
 
+
 		float initialDistance = Vector3.Distance(initialPosition, transform.position);
+
 		// patrolling
 		if (initialDistance > followDistance)
 		{
@@ -174,7 +176,7 @@ public class EnemyControl : MonoBehaviour
 
 		}
 		else if (curState == EnemyState.ATTACK)
-		{	// Run is no more
+		{   // Run is no more
 			anim.SetBool("Run", false);
 			whereTo_Move.Set(0f, 0f, 0f);
 
@@ -192,7 +194,7 @@ public class EnemyControl : MonoBehaviour
 				currentAttackTime = 0f;
 			}
 			else
-			{	// 0 is no attack
+			{   // 0 is no attack
 				anim.SetInteger("Atk", 0);
 				currentAttackTime += Time.deltaTime;
 			}
@@ -222,7 +224,7 @@ public class EnemyControl : MonoBehaviour
 			anim.SetBool("Walk", true);
 
 			if (Vector3.Distance(transform.position, whereTo_Navigate) <= 2f)
-			{	
+			{
 				whereTo_Navigate.x = Random.Range(initialPosition.x - npcRoamAmount, initialPosition.x + npcRoamAmount);
 				whereTo_Navigate.z = Random.Range(initialPosition.z - npcRoamAmount, initialPosition.z + npcRoamAmount);
 			}
@@ -232,6 +234,7 @@ public class EnemyControl : MonoBehaviour
 			}
 
 		}
+
 		else
 		{
 			anim.SetBool("Run", false);
