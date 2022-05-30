@@ -95,6 +95,7 @@ public class EnemyControl : MonoBehaviour
 		}
 		else
 		{// death is only the beginning
+			FindObjectOfType<AudioManager>().Play("PlayerDeath");
 			anim.SetBool("Death", true);
 			charController.enabled = false;
 			navAgent.enabled = false;
@@ -188,8 +189,8 @@ public class EnemyControl : MonoBehaviour
 			if (currentAttackTime >= waitAttackTime)
 			{
 				int atkRange = Random.Range(1, 3);
-
 				anim.SetInteger("Atk", atkRange);
+				FindObjectOfType<AudioManager>().Play("Hit");
 				finished_Animation = false;
 				currentAttackTime = 0f;
 			}

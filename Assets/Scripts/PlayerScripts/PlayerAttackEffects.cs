@@ -8,6 +8,11 @@ public class PlayerAttackEffects : MonoBehaviour
     public GameObject spell1_Prefab, spell2_Prefab, staffAttack_Prefab, shield_Prefab,
         healFX_Prefab, thunderFX_Prefab;
 
+    private void Awake()
+    {
+
+    }
+
     void Spell1()
     {
         Instantiate(spell1_Prefab, spell1_Spawn.transform.position, Quaternion.identity);

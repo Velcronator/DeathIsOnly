@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Awake()
     {
-        if(tag == "Boss")
+        if(tag == "BlueBoss" || tag == "YellowBoss" || tag == "RedBoss" || tag == "PurpleBoss")
         {
 			health_Img = GameObject.Find("Health FG Boss").GetComponent<Image>();
         }
@@ -30,7 +30,7 @@ public class EnemyHealth : MonoBehaviour
 
 		if (health <= 0)
 		{
-
+			//TODO play sounds
 		}
 	}
 

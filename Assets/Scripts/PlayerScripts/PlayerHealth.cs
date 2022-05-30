@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+	public GameObject lostMenuUI;
 
 	public float health = 100f;
 
@@ -36,14 +37,11 @@ public class PlayerHealth : MonoBehaviour
 
 			if (health <= 0f)
 			{
+				FindObjectOfType<AudioManager>().Play("PlayerDeath");
 				animator.SetBool("Death", true);
-				if (!animator.IsInTransition(0) && animator.GetCurrentAnimatorStateInfo(0).IsName("Death")
-				   && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95)
-				{
-					// PLAYER DIED TODO
-					// DESTROY PLAYER
-					Destroy(gameObject, 2f);
-				}
+				lostMenuUI.SetActive(true);
+				Destroy(gameObject, 1f);
+				Time.timeScale = 0f;
 			}
 		}
 	}

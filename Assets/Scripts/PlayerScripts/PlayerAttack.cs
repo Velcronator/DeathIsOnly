@@ -93,7 +93,7 @@ public class PlayerAttack : MonoBehaviour
 
 			}
 		}
-		else if (Input.GetKeyDown(KeyCode.Q))
+		else if (Input.GetKeyDown(KeyCode.F))
 		{
 			playerMove.TargetPosition = transform.position;
 
@@ -117,7 +117,7 @@ public class PlayerAttack : MonoBehaviour
 
 			}
 		}
-		else if (Input.GetMouseButtonDown(1))
+		else if (Input.GetMouseButtonDown(1) || Input.GetKeyDown(KeyCode.E))
 		{	// Space bar
 			playerMove.TargetPosition = transform.position;
 
@@ -134,7 +134,7 @@ public class PlayerAttack : MonoBehaviour
 			animator.SetInteger("Attack", 0);
 		}
 
-		if (Input.GetKey(KeyCode.E))
+		if (Input.GetKey(KeyCode.R))
 		{	// Stop look hey what's that sound everybody look around
 			Vector3 targetPos = Vector3.zero;
 
