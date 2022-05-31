@@ -8,6 +8,7 @@ public class EnemySpawn : MonoBehaviour
     public float repeatTime = 3f;
     public float rangeSpawnArea = 20f;
 
+
     private void Start()
     {
         InvokeRepeating("Spawn", 2f, repeatTime);

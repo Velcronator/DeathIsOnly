@@ -8,6 +8,8 @@ public class EnemyHealth : MonoBehaviour
 	// stuff to assign
 	public float health = 100f;
 	public Image health_Img;
+    [HideInInspector]
+    public bool isShield = false;
 
     private void Awake()
     {
@@ -25,13 +27,15 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(float amount)
 	{
-		health -= amount;
-		health_Img.fillAmount = health / 100f;
-
-		if (health <= 0)
-		{
-			//TODO play sounds
-		}
+        if (isShield)
+        {
+            return;
+        }
+        else
+        {
+		    health -= amount;
+		    health_Img.fillAmount = health / 100f;
+        }
 	}
 
 

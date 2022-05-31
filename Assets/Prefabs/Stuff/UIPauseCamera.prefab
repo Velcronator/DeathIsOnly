@@ -85,6 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 255540451812880617}
   - component: {fileID: 255540451812880616}
+  - component: {fileID: 1773090897}
   m_Layer: 0
   m_Name: UIPauseCamera
   m_TagString: Untagged
@@ -150,6 +151,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!81 &1773090897
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 255540451812880619}
+  m_Enabled: 1
 --- !u!1 &2810897768628656133
 GameObject:
   m_ObjectHideFlags: 0
@@ -182,9 +191,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1997413402}
-  - {fileID: 7845937756761252682}
   - {fileID: 772650185}
   - {fileID: 885856662}
+  - {fileID: 7845937756761252682}
   - {fileID: 1034254766}
   m_Father: {fileID: 255540451812880617}
   m_RootOrder: 0
@@ -288,7 +297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
       propertyPath: m_AnchorMax.x
@@ -394,7 +403,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4706808847312896555, guid: 6ae2ac8e54941f34aa5da11b631d7938, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4706808847312896555, guid: 6ae2ac8e54941f34aa5da11b631d7938, type: 3}
       propertyPath: m_AnchorMax.x
@@ -496,7 +505,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 747404093289779177, guid: 92b18e646880986498cd5a888d9def0f, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 747404093289779177, guid: 92b18e646880986498cd5a888d9def0f, type: 3}
       propertyPath: m_AnchorMax.x

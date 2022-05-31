@@ -6760,6 +6760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bb2dba808538734ca6f655c8a1cbe20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lostMenuUI: {fileID: 0}
   health: 100
 --- !u!1 &8351017769047109148
 GameObject:

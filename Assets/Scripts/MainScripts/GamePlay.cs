@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,8 @@ using UnityEngine.UI;
 
 public class GamePlay : MonoBehaviour
 {
+   // private EnemyHealth enemyHealth;
+
     public GameObject wonMenuUI;
     public Text blueCount, yellowCount, redCount, purpleCount, totalCount;
     public int amountOfHenchmenForALoseConditions = 10;
@@ -16,9 +19,36 @@ public class GamePlay : MonoBehaviour
     private int bossCount, countBlue, countYellow, countRed, countPurple = 0;
     private int countBlueBoss, countYellowBoss, countRedBoss, countPurpleBoss = 0;
 
+    private void Awake()
+    {
+        
+    }
+
     void LateUpdate()
     {
         countEnemies();
+        areBossesShielded();
+    }
+
+    private void areBossesShielded()
+    {
+        if (!isBlueBossDead && countBlue > 0)
+        {
+            
+        }
+        if (!isYellowBossDead && countYellow > 0)
+        {
+            //blue boss is shielded
+        }
+        if (!isRedBossDead && countRed > 0)
+        {
+            //blue boss is shielded
+        }
+        if (!isPurpleBossDead && countPurple > 0)
+        {
+            //blue boss is shielded
+        }
+
     }
 
     void countEnemies()

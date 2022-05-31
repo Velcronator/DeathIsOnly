@@ -750,8 +750,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce72145065b85c44687470ea7f685d78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 150
   health_Img: {fileID: 1076335165477914968}
+  isShield: 0
 --- !u!114 &5673652914290631752
 MonoBehaviour:
   m_ObjectHideFlags: 0
