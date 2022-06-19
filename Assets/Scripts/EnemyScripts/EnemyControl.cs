@@ -54,11 +54,13 @@ public class EnemyControl : MonoBehaviour
 		navAgent = GetComponent<NavMeshAgent>();
 		charController = GetComponent<CharacterController>();
 		anim = GetComponent<Animator>();
+
 		// set positions 
 		initialPosition = transform.position;
 		whereTo_Navigate = transform.position;
 
 		enemyHealth = GetComponent<EnemyHealth>();
+
 	}
 
 	void Update()
@@ -102,6 +104,8 @@ public class EnemyControl : MonoBehaviour
 			Destroy(gameObject, 2f);
 		}
 	}
+
+
 
 	EnemyState SetEnemyState(EnemyState curState, EnemyState lastState, float enemyToPlayerDis)
 	{

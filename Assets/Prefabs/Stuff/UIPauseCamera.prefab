@@ -195,6 +195,7 @@ RectTransform:
   - {fileID: 885856662}
   - {fileID: 7845937756761252682}
   - {fileID: 1034254766}
+  - {fileID: 3564467205333811955}
   m_Father: {fileID: 255540451812880617}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -276,6 +277,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fc77065b393a5c44bbfd38d75da9520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &255540450995805788
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3992109663733358891}
+    m_Modifications:
+    - target: {fileID: 3673904468441341100, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_text
+      value: "Kill all the henchmen to lower the Boss shield\nObjective: Kill all
+        four bosses for Yggdrasil\n\nA, S  Short Range Spell\r\n\rD Long Range Spell\r\n\rF
+        Fire Shield\r\nW  Heal\r\nE  AOE Spirit Attack \r\n\rR Make the player look
+        at the mouse cursor "
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341100, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_fontSize
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341100, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_margin.w
+      value: -0.07156372
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341100, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_margin.x
+      value: -1.5115967
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341100, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_margin.y
+      value: -0.8272705
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341100, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341102, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_Name
+      value: Instructions
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -731.9945
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -483.1118
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 286
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 112.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c60223d853440504caebf7e302f2d810, type: 3}
+--- !u!224 &3564467205333811955 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3673904468441341103, guid: c60223d853440504caebf7e302f2d810, type: 3}
+  m_PrefabInstance: {fileID: 255540450995805788}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3673904468810213478
 PrefabInstance:
   m_ObjectHideFlags: 0

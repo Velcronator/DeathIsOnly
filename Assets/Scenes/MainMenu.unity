@@ -402,5 +402,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIPauseCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 3564467205333811955, guid: 7551ff6e97981ce4bba2e139639c65a8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 63
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7551ff6e97981ce4bba2e139639c65a8, type: 3}

@@ -687,6 +687,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   health_Img: {fileID: 7765199289834512730, guid: 3466b8ce1f0d4eb4481ee2944a68ca5a, type: 3}
+  isShield: 0
+  Shield: {fileID: 0}
 --- !u!114 &8001625297232756182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,6 +701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe81ddfc011d0da42b8019e3aa47e057, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  treePrefab: {fileID: 2457298649727471776, guid: f132c4160cc19994cb706323151ac0c1, type: 3}
   npcRoamAmount: 10
   attack_Distance: 1.5
   alert_Attack_Distance: 8

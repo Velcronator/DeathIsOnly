@@ -6,11 +6,15 @@ using UnityEngine.UI;
 
 public class GamePlay : MonoBehaviour
 {
-   // private EnemyHealth enemyHealth;
+    private EnemyHealth enemyHealth;
+    public GameObject blue;
+    public GameObject yellow;
+    public GameObject red;
+    public GameObject purple;
+    public GameObject player;
 
-    public GameObject wonMenuUI;
+    public GameObject wonMenuUI, lostMenuUI;
     public Text blueCount, yellowCount, redCount, purpleCount, totalCount;
-    public int amountOfHenchmenForALoseConditions = 10;
 
     private bool isBlueBossDead = false;
     private bool isYellowBossDead = false;
@@ -18,11 +22,6 @@ public class GamePlay : MonoBehaviour
     private bool isPurpleBossDead = false;
     private int bossCount, countBlue, countYellow, countRed, countPurple = 0;
     private int countBlueBoss, countYellowBoss, countRedBoss, countPurpleBoss = 0;
-
-    private void Awake()
-    {
-        
-    }
 
     void LateUpdate()
     {
@@ -32,23 +31,74 @@ public class GamePlay : MonoBehaviour
 
     private void areBossesShielded()
     {
-        if (!isBlueBossDead && countBlue > 0)
+        if (!isBlueBossDead)
         {
-            
-        }
-        if (!isYellowBossDead && countYellow > 0)
-        {
-            //blue boss is shielded
-        }
-        if (!isRedBossDead && countRed > 0)
-        {
-            //blue boss is shielded
-        }
-        if (!isPurpleBossDead && countPurple > 0)
-        {
-            //blue boss is shielded
+            if(countBlue == 0)
+            {
+                blue.GetComponent<EnemyHealth>().isShield = false;
+                blue.GetComponent<EnemyHealth>().Shield.SetActive(false);
+                blue.GetComponent<CapsuleCollider>().enabled = false;
+            }
+            else
+            {
+                blue.GetComponent<EnemyHealth>().isShield = true;
+                blue.GetComponent<EnemyHealth>().Shield.SetActive(true);
+                blue.GetComponent<CapsuleCollider>().enabled = true;
+            }
         }
 
+        if (!isYellowBossDead)
+        {
+            if (countYellow == 0)
+            {
+                yellow.GetComponent<EnemyHealth>().isShield = false;
+                yellow.GetComponent<EnemyHealth>().Shield.SetActive(false);
+                yellow.GetComponent<CapsuleCollider>().enabled = false;
+
+            }
+            else
+            {
+                yellow.GetComponent<EnemyHealth>().isShield = true;
+                yellow.GetComponent<EnemyHealth>().Shield.SetActive(true); 
+                yellow.GetComponent<CapsuleCollider>().enabled = true;
+
+            }
+        }
+
+        if (!isRedBossDead)
+        {
+            if (countRed == 0)
+            {
+                red.GetComponent<EnemyHealth>().isShield = false;
+                red.GetComponent<EnemyHealth>().Shield.SetActive(false);
+                red.GetComponent<CapsuleCollider>().enabled = false;
+
+            }
+            else
+            {
+                red.GetComponent<EnemyHealth>().isShield = true;
+                red.GetComponent<EnemyHealth>().Shield.SetActive(true);
+                red.GetComponent<CapsuleCollider>().enabled = true;
+
+            }
+        }
+        if (!isPurpleBossDead)
+        {
+            if (countPurple == 0)
+            {
+                purple.GetComponent<EnemyHealth>().isShield = false;
+                purple.GetComponent<EnemyHealth>().Shield.SetActive(false);
+                purple.GetComponent<CapsuleCollider>().enabled = false;
+
+            }
+            else
+            {
+                purple.GetComponent<EnemyHealth>().isShield = true;
+                purple.GetComponent<EnemyHealth>().Shield.SetActive(true);
+                purple.GetComponent<CapsuleCollider>().enabled = true;
+
+            }
+        }
     }
 
     void countEnemies()

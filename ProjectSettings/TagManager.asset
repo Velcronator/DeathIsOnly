@@ -12,6 +12,12 @@ TagManager:
   - YellowBoss
   - RedBoss
   - PurpleBoss
+  - PurpleEnemy
+  - BlueEnemy
+  - YellowEnemy
+  - RedEnemy
+  - TreeSpawner
+  - Boss
   layers:
   - Default
   - TransparentFX
